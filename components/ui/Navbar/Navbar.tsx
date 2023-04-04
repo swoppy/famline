@@ -11,7 +11,7 @@ const Navbar = () => {
   const router = useRouter();
   const supabaseClient = useSupabaseClient();
   const { user } = useUser();
-
+  console.log('useUser: ', user);
   return (
     <nav className={s.root}>
       <a href="#skip" className="sr-only focus:not-sr-only">
@@ -20,12 +20,12 @@ const Navbar = () => {
       <div className="mx-auto max-w-6xl px-6">
         <div className="flex justify-between align-center flex-row py-4 md:py-6 relative">
           <div className="flex flex-1 items-center">
-            <Link href="/" className={s.logo} aria-label="Logo">
+            {/* <Link href="/" className={s.logo} aria-label="Logo">
               <Logo />
-            </Link>
+            </Link> */}
             <nav className="space-x-2 ml-6 hidden lg:block">
               <Link href="/" className={s.link}>
-                Pricing
+                Home
               </Link>
               <Link href="/account" className={s.link}>
                 Account
