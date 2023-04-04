@@ -10,7 +10,7 @@ export default function Footer() {
     <footer className="mx-auto max-w-[1920px] px-6 bg-zinc-900">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 border-b border-zinc-600 py-12 text-white transition-colors duration-150 bg-zinc-900">
         <div className="col-span-1 lg:col-span-2">
-          <Link
+          {/* <Link
             href="/"
             className="flex flex-initial items-center font-bold md:mr-24"
           >
@@ -18,7 +18,7 @@ export default function Footer() {
               <Logo />
             </span>
             <span>ACME</span>
-          </Link>
+          </Link> */}
         </div>
         <div className="col-span-1 lg:col-span-2">
           <ul className="flex flex-initial flex-col md:flex-1">
@@ -81,7 +81,7 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-        <div className="col-span-1 lg:col-span-6 flex items-start lg:justify-end text-white">
+        {/* <div className="col-span-1 lg:col-span-6 flex items-start lg:justify-end text-white">
           <div className="flex space-x-6 items-center h-10">
             <a
               aria-label="Github Repository"
@@ -90,9 +90,9 @@ export default function Footer() {
               <GitHub />
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
-      <div className="py-12 flex flex-col md:flex-row justify-between items-center space-y-4 bg-zinc-900">
+      {/* <div className="py-12 flex flex-col md:flex-row justify-between items-center space-y-4 bg-zinc-900">
         <div>
           <span>&copy; 2020 ACME, Inc. All rights reserved.</span>
         </div>
@@ -106,7 +106,7 @@ export default function Footer() {
             />
           </a>
         </div>
-      </div>
+      </div> */}
     </footer>
   );
 }
